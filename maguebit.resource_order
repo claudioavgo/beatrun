@@ -18,5 +18,6 @@
   ],
   "ResourceOrderSettings": [
     {"name":"mangue2","order":1,"path":"objects/mangue2/mangue2.yy",},
+    {"name":"Sprite1","order":16,"path":"sprites/Sprite1/Sprite1.yy",},
   ],
 }

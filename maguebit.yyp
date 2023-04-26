@@ -35,6 +35,7 @@
   },
   "resources": [
     {"id":{"name":"mangue2","path":"objects/mangue2/mangue2.yy",},},
+    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"mangue","path":"objects/mangue/mangue.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
