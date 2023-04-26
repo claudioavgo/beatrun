@@ -16,5 +16,7 @@
     {"name":"Extensões","order":14,"path":"folders/Extensões.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"mangue2","order":1,"path":"objects/mangue2/mangue2.yy",},
+  ],
 }
