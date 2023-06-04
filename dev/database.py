@@ -12,3 +12,11 @@ def database(new_game=False, add_players=False, game_pin='000', remove_players=F
                     file.write('')
                 break
         return rnd
+
+
+def pontos(resposta = False, tempo=0, segundos=0):
+    if resposta == True:
+        pts = round((1 - ((segundos/tempo)/2))*1000)
+    else:
+        pts = 0
+    return pts
