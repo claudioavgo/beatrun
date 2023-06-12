@@ -28,7 +28,7 @@
 4. Execute o seguinte comando para iniciar o jogo:
 
 ```bash
-python main.py
+database main.py
 ```
 
 5. Siga as instruções fornecidas pelo jogo para criar uma conta como professor ou fazer login como aluno.
