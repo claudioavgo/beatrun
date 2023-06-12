@@ -1,7 +1,7 @@
 <h1 align="center"> Beat Run </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20desenvolvimento-green" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Em%20desenvolvimento-green?style=flat-square" alt="Status">
 </p>
 
 <p align="center"> 
@@ -54,6 +54,6 @@ python main.py
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request para sugerir melhorias, correções de bugs ou novas funcionalidades.
 
 ## Licença
-<img src="https://img.shields.io/badge/License-MIT-green" alt="Status">
+<img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="Status">
 
 Divirta-se jogando o Jogo de Perguntas e Respostas! Se tiver alguma dúvida ou problema, entre em contato.
