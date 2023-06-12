@@ -2,12 +2,12 @@
 <img src="https://img.shields.io/badge/Status-Em%20desenvolvimento-green" />
 Este é o projeto do Beat Run em Python. O jogo permite que um professor crie uma partida, adicione perguntas com respostas e os alunos possam participar da partida respondendo às perguntas.
 
-:hammer: Requisitos
-`Funcionalidade 1\n`": Python 3.x
-`Funcionalidade 2`: Terminal ou Console
-`Funcionalidade 2a`:Bibliotecas Python (não requer instalação adicional)
-`Funcionalidade 3`:Instruções de Uso
-`Funcionalidade 4`:Clone o repositório ou faça o download dos arquivos do projeto.
+:hammer: Requisitos - 
+`Python 3.x`
+`Terminal ou Console`
+`Bibliotecas Python (não requer instalação adicional)`
+`Instruções de Uso`
+`Clone o repositório ou faça o download dos arquivos do projeto.`
 
 Certifique-se de ter o Python 3.x instalado em seu sistema.
 
