@@ -6,7 +6,7 @@
   
 <p align="center">
   <a href="https://projetos-cesar.gitbook.io/beatrun/">
-    <img src="https://img.shields.io/badge/BeatRun-Documenta%C3%A7%C3%A3o-blue?style=flat-square" alt="Documentação">
+    <img src="https://img.shields.io/badge/BeatRun-Documenta%C3%A7%C3%A3o-blue?style=for-the-badge" alt="Documentação">
   </a>
 </p>
 
