@@ -62,4 +62,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou env
 ## Licença
 <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="Status">
 
-Divirta-se jogando o Jogo de Perguntas e Respostas! Se tiver alguma dúvida ou problema, entre em contato.
+Divirta-se jogando o Beat Run! Se tiver alguma dúvida ou problema, entre em contato.
