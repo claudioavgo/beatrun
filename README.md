@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Status-Em%20desenvolvimento-green?style=flat-square" alt="Status">
 </p>
 
-[Documentação do Código](https://projetos-cesar.gitbook.io/beatrun/)
+[![Documentação do Código](https://img.shields.io/badge/Documentação-do%20Código-blue?style=flat-square)](https://projetos-cesar.gitbook.io/beatrun/)
 
 <p align="center"> 
   Este é o projeto do Beat Run em Python. O jogo permite que um professor crie uma partida, adicione perguntas com respostas e os alunos possam participar da partida respondendo às perguntas.
