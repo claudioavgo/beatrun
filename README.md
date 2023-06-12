@@ -5,7 +5,7 @@
 </p>
   
 <p align="center">
-  [![BeatRun Documentação](https://img.shields.io/badge/BeatRun-Documenta%C3%A7%C3%A3o-blue?style=for-the-badge)](https://projetos-cesar.gitbook.io/beatrun/)
+  [![BeatRun Documentação](https://img.shields.io/badge/BeatRun-Documenta%C3%A7%C3%A3o-blue?style=for-the-badge)]
 </p>
 
 <p align="center"> 
