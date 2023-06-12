@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Em%20desenvolvimento-green?style=flat-square" alt="Status">
-  [![Documentação Gitbook](https://img.shields.io/badge/BeatRun-Documenta%C3%A7%C3%A3o-blue?style=for-the-badge)](https://projetos-cesar.gitbook.io/beatrun/)
+  <img src="https://img.shields.io/badge/BeatRun-Documenta%C3%A7%C3%A3o-blue?style=flat-square" alt="Status">
 </p>
 
 <p align="center"> 
