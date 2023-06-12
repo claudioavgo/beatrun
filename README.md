@@ -23,6 +23,7 @@
 
 ```bash
 python main.py
+```
 
 5. Siga as instruções fornecidas pelo jogo para criar uma conta como professor ou fazer login como aluno.
 6. Se for um professor, você poderá criar uma nova partida e adicionar perguntas ao jogo.
