@@ -3,7 +3,7 @@
 Este é o projeto do Beat Run em Python. O jogo permite que um professor crie uma partida, adicione perguntas com respostas e os alunos possam participar da partida respondendo às perguntas.
 
 :hammer: Requisitos
-`Funcionalidade 1`: Python 3.x
+`Funcionalidade 1\n`": Python 3.x
 `Funcionalidade 2`: Terminal ou Console
 `Funcionalidade 2a`:Bibliotecas Python (não requer instalação adicional)
 `Funcionalidade 3`:Instruções de Uso
