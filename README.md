@@ -5,7 +5,7 @@
 </p>
   
 <p align="center">
-  <img src="https://img.shields.io/badge/BeatRun-Documenta%C3%A7%C3%A3o-blue?style=for-the-badge" alt="Status">
+  [![BeatRun Documentação](https://img.shields.io/badge/BeatRun-Documenta%C3%A7%C3%A3o-blue?style=for-the-badge)](link_para_documentação)
 </p>
 
 <p align="center"> 
