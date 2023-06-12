@@ -1,5 +1,5 @@
 <h1 align="center"> Beat Run </h1>
-![status](https://img.shields.io/badge/Status-Em%20desenvolvimento-green)
+<img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 Este é um projeto do Beat Run em Python. O jogo permite que um professor crie uma partida, adicione perguntas com respostas e os alunos possam participar da partida respondendo às perguntas.
 
 Requisitos
