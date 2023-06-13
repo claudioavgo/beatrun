@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+      @import url('https://fonts.cdnfonts.com/css/pf-tempesta-seven');
+      body {
+        font-family: 'PF Tempesta Seven', sans-serif;
+      }
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #D17F36 !important;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+      }
+  </style>
+  <title>BeatRun</title>
+</head>
+<body class="bg-[#365712] flex text-center justify-center items-center flex-col">
+  <div class="mt-52 flex flex-col justify-center items-center">
+    <div class="w-36 mb-5 bg-[#add8e6] rounded-full">
+        <img src="../static/icones/ChicoScience.png" class="rounded-full">
+    </div>
+    <form class="flex flex-col justify-center items-center" method="POST">
+      <input name="nick" placeholder="Nick" class="text-center bg-[#DAB56F] mb-2 text-[#D17F36] p-4 pl-6 pr-6 rounded-full outline-none">
+      <input name="pin" placeholder="PIN" class="text-center bg-[#DAB56F] mb-2 text-[#D17F36] p-4 pl-6 pr-6 rounded-full outline-none">
+      <a><button class="mb-5 font-2xl w-72 p-3 rounded-full text-white bg-[#DAB56F] flex justify-center items-center">COMEÇAR</button></a>
+    </form>
+  </div>
+</body>
+</html>

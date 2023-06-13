@@ -1,46 +1,69 @@
 import random
+import json
 
 used_pins=[]
-quest_and_response = {}
 
-def questions(create_questions_false_and_true=False, add_questions=False, remove_questions=False, send_questions=False, database=None):
-    if create_questions_false_and_true:
-        while True:
-            #Exemplo das perguntas sendo adicionadas(SÓ SUBSTITUIR)
-            #------------------------------------------------------------------
-            #Adicionando a primeira pergunta:
-
-            question = input(f'Digite a pergunta:') #Exemplo: prof ira enviar a pergunta
-            first_response = input(f'Digite a primeira resposta: ') #Exemplo: prof ira enviar a 1° resposta
-            false_and_true = input(f'Essa é uma resposta true ou false: ') #Exemplo : prof ira dizer se é falso ou verdadeiro
-            response1 = [first_response, false_and_true]
-
-            #Adicionando a segunda pergunta:
-
-            second_response = input(f'Digite a segunda resposta: ') #Exemplo: prof ira enviar a 2° resposta
-            false_and_true = input(f'Essa é uma resposta true ou false: ') #Exemplo : prof ira dizer se é falso ou verdadeiro
-            response2 = [second_response, false_and_true]
-            quest_and_response[question] = [response1, response2]
-            quest_and_response['teste'] = [['teste1', 'True'], ['teste2', 'True']]
-            #------------------------------------------------------------------
-
-            if send_questions:
-                with open(f'./dev/games/{database}-game.csv', 'a') as file:
-                    file.write(f'\n{quest_and_response}')
-                break
-        return quest_and_response
-
-def database(new_game=False, add_players=False, game_pin='000', remove_players=False):
+def database(acc_att=False, acc_get=False, att_game=False,data="undefined",check_game=False, started=False, get_questions=False, create_question=False, question='undefined', acc_check=False, email='undefined', senha='undefined', get_game=False, new_game=False, add_players=False, game_pin='000', remove_players=False):
     if new_game:
         while True:
             rnd=random.randint(10000, 99999)
             if not rnd in used_pins:
                 used_pins.append(rnd)
-                with open(f'./dev/games/{rnd}-game.csv', 'a') as file:
-                    file.write(f'{rnd}')
+                with open(f'./dev/games.json', 'r') as arquivox:
+                    save = arquivox.readline()
+                    arquivox.close()
+                with open(f'./dev/games.json', 'w') as arquivo:
+                    save=json.loads(save)
+                    save["games"].append(str(rnd))
+                    arquivo.write(str(save).replace("'", '"'))
+                with open(f'./dev/games/{rnd}-game.json', 'a') as file:
+                    base={"game.id":rnd,"started":0,"players":{},"perguntas":{}}
+                    base["perguntas"].update(data)
+                    file.write(str(base).replace("'", '"'))
+                    return rnd
                 break
         return rnd
-
-game_pin = database(new_game=True)
-questions(create_questions_false_and_true=True,send_questions=True, database=game_pin)
-    
+    elif get_game:
+        with open(f'./dev/games/{game_pin}-game.json', 'r') as file:
+            primeira_linha=file.readline()
+            data=json.loads(primeira_linha)
+            return(data)
+    elif acc_check:
+        with open(f'./dev/users_prof.json', 'r') as file:
+            dados = json.loads(file.readline())
+            
+            for i in dados["users"]:
+                if email == dados["users"][i]["email"] and  senha == dados["users"][i]["senha"]:
+                    return True
+            return False
+    elif create_question:
+        with open(f'./dev/games/{rnd}-game.json', 'a') as file:
+            file.write('')
+    elif started:
+        with open(f'./dev/games/{game_pin}-game.json', 'r') as file:
+            data=json.loads(file.readline())
+            if data["started"] == 0:
+                return False
+            else:
+                return True
+    elif check_game:
+        with open("./dev/games.json", 'r') as file:
+            data = json.loads(file.readline())
+            if game_pin in data["games"]:
+                return True
+            else:
+                return False
+    elif att_game:
+        with open(f'./dev/games/{game_pin}-game.json', 'w') as file:
+            file.write(str(data).replace("'", '"'))
+    elif acc_get:
+        with open(f'./dev/users_prof.json', 'r') as file:
+            dados = json.loads(file.readline())
+        
+        for i in dados["users"]:
+            if dados["users"][i]["email"] == email:
+                return dados, i
+        return False
+    elif acc_att:
+        with open(f'./dev/users_prof.json', 'w') as file:
+            file.write(str(data).replace("'", '"'))

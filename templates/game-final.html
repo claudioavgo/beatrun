@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+  <style>
+      @import url('https://fonts.cdnfonts.com/css/pf-tempesta-seven');
+      body {
+        font-family: 'PF Tempesta Seven', sans-serif;
+      }
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #D17F36 !important;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+      }
+  </style>
+  <title>BeatRun</title>
+</head>
+<body class="bg-[#F28C27] flex text-center justify-center items-center flex-col">
+  <div class="mt-48 flex flex-col justify-center items-center">
+    <img class="animate__animated animate__tada" src="../static/icones/caran.png">
+    <h1 class="animate__animated animate__tada text-[#365712] mb-2 text-2xl font-bold">Parabéns!</h1>
+    <h1 class="animate__animated animate__tada text-[#fff] mb-12 text-2xl font-bold">Você chegou ao fim!</h1>
+    <h1 class="animate__animated animate__tada text-[#fff] mb-2 text-xl font-bold">Sua pontuação!</h1>
+    <h1 class="animate__animated animate__wobble text-[#365712] mb-32 text-6xl font-bold">{{ pontuacao }}</h1>
+    <a href="./"><button>Jogar novamente</button></a>
+  </div>
+</body>
+</html>
